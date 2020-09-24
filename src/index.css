@@ -1,13 +1,122 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #34495e;
+  --primary-shadow: rgba(52, 73, 94, 0.4);
+}
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Baloo Tammudu 2', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  background-color: #fdfdfd;
+  width: 650px;
+  margin-top: 3rem;
+  padding: 1.7rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.container .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .title h1 {
+  font-weight: 400;
+}
+.container .title small {
+  align-self: flex-start;
+}
+
+.container ul {
+  list-style: none;
+  width: 100%;
+}
+
+.back-button {
+  color: var(--primary-color);
+}
+
+.ex-container {
+  margin-top: 0.8rem;
+}
+
+.ex-container h3 {
+  font-weight: 300;
+}
+
+.ex-container .inputs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+.input-group input {
+  padding: 5px 6px;
+  border: 1px solid #0007;
+  border-radius: 6px;
+  outline: none;
+
+  transition: box-shadow 0.15s;
+}
+
+.input-group input:active,
+.input-group input:focus {
+  box-shadow: 0 0 6px var(--primary-shadow);
+}
+
+.final-actions {
+  margin-top: 1rem;
+}
+
+.final-actions button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 12px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fdfdfd;
+  background-color: var(--primary-color);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: box-shadow 0.18s;
+}
+
+.final-actions button:hover {
+  box-shadow: 0 0 10px var(--primary-shadow);
 }
