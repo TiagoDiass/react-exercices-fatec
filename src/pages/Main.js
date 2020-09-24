@@ -12,10 +12,19 @@ class Main extends Component {
 
         <ul>
           <li>
-            <Link to="/ex1">Exercicio 1</Link>
+            <a
+              href="https://github.com/TiagoDiass/react-exercices-fatec"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Clique aqui para ver o código fonte
+            </a>
           </li>
           <li>
-            <Link to="ex2">Exercicios 2</Link>
+            <Link to="/ex1">Exercício 1</Link>
+          </li>
+          <li>
+            <Link to="ex2">Exercício 2</Link>
           </li>
           <li>ex 1</li>
           <li>ex 1</li>

@@ -51,7 +51,7 @@ class Ex1 extends Component {
         <BackButton />
 
         <div className="title">
-          <h1>Exercicio 1 - JavaScript</h1>
+          <h1>Exercício 1 - JavaScript</h1>
           <small>Tiago Dias</small>
         </div>
 

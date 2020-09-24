@@ -34,7 +34,8 @@ code {
   margin-top: 3rem;
   padding: 1.7rem;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
 }
 
 .container .title {
@@ -127,4 +128,8 @@ code {
 
 .final-actions button:hover {
   box-shadow: 0 0 10px var(--primary-shadow);
+}
+
+.w-50 {
+  width: 50%;
 }
