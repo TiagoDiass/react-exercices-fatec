@@ -55,6 +55,10 @@ code {
   width: 100%;
 }
 
+.container ul li a {
+  color: var(--primary-color);
+}
+
 .back-button {
   color: var(--primary-color);
 }
@@ -94,6 +98,10 @@ code {
 .input-group input:active,
 .input-group input:focus {
   box-shadow: 0 0 6px var(--primary-shadow);
+}
+
+.resultado {
+  margin-top: 1rem;
 }
 
 .final-actions {

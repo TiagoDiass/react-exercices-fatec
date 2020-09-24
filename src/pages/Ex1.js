@@ -6,6 +6,9 @@ class Ex1 extends Component {
   state = {
     peso: '',
     altura: '',
+    mostrarResultado: false,
+    resultado: '',
+    mensagem: '',
   };
 
   handleInputPeso = (event) => {
@@ -22,10 +25,26 @@ class Ex1 extends Component {
 
   calcularImcEMostrarResultado = () => {
     const { peso, altura } = this.state;
+    const resultado = peso / (altura * 2);
+    let mensagem;
+
+    if (resultado < 20) {
+      mensagem = 'Abaixo do peso';
+    } else if (resultado >= 20 && resultado < 25) {
+      mensagem = 'No peso ideal';
+    } else {
+      mensagem = 'Acima do peso';
+    }
+
+    this.setState({
+      resultado: resultado.toFixed(2),
+      mensagem,
+      mostrarResultado: true,
+    });
   };
 
   render() {
-    const { peso, altura } = this.state;
+    const { peso, altura, mostrarResultado, resultado, mensagem } = this.state;
 
     return (
       <div className="container">
@@ -65,6 +84,16 @@ class Ex1 extends Component {
               />
             </div>
           </div>
+
+          {mostrarResultado ? (
+            <div className="resultado">
+              <h2>
+                Seu IMC é de {resultado}, você está {mensagem}
+              </h2>
+            </div>
+          ) : (
+            <></>
+          )}
 
           <div className="final-actions">
             <button onClick={this.calcularImcEMostrarResultado}>
