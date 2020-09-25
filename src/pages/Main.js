@@ -6,7 +6,7 @@ class Main extends Component {
     return (
       <div className="container">
         <div className="title">
-          <h1>Exercicios JavaScript</h1>
+          <h1>Exercícios JavaScript</h1>
           <small>Tiago Dias</small>
         </div>
 
@@ -24,7 +24,13 @@ class Main extends Component {
             <Link to="/ex1">Exercício 1</Link>
           </li>
           <li>
-            <Link to="ex2">Exercício 2</Link>
+            <Link to="/ex2">Exercício 2</Link>
+          </li>
+          <li>
+            <Link to="/ex3">Exercício 3</Link>
+          </li>
+          <li>
+            <Link to="/ex4">Exercício 4</Link>
           </li>
           <li>ex 1</li>
           <li>ex 1</li>
