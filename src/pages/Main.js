@@ -32,8 +32,12 @@ class Main extends Component {
           <li>
             <Link to="/ex4">Exercício 4</Link>
           </li>
-          <li>ex 1</li>
-          <li>ex 1</li>
+          <li>
+            <Link to="/ex5">Exercício 5</Link>
+          </li>
+          <li>
+            <Link to="/ex6">Exercício 6</Link>
+          </li>
         </ul>
       </div>
     );
