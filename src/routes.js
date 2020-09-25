@@ -8,6 +8,7 @@ import Ex3 from './pages/Ex3';
 import Ex4 from './pages/Ex4';
 import Ex5 from './pages/Ex5';
 import Ex6 from './pages/Ex6';
+import Ex7 from './pages/Ex7';
 
 export default function Routes() {
   return (
@@ -20,6 +21,7 @@ export default function Routes() {
         <Route path="/ex4" component={Ex4} />
         <Route path="/ex5" component={Ex5} />
         <Route path="/ex6" component={Ex6} />
+        <Route path="/ex7" component={Ex7} />
       </Switch>
     </BrowserRouter>
   );

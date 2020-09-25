@@ -38,6 +38,9 @@ class Main extends Component {
           <li>
             <Link to="/ex6">Exercício 6</Link>
           </li>
+          <li>
+            <Link to="/ex7">Exercício 7</Link>
+          </li>
         </ul>
       </div>
     );

@@ -11,7 +11,7 @@ class Ex6 extends Component {
     const numeros = [];
 
     for (let i = 1; i <= 500; i++) {
-      if (i % 5 == 0) {
+      if (i % 5 === 0) {
         numeros.push(i);
       }
     }
